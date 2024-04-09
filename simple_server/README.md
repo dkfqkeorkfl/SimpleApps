@@ -33,11 +33,11 @@ Client는 최대한 간단하게 만들기 위하여 JWT말고 별도로 캐싱�
 ### Setup
 1. **레포지토리 클론하기:**
     ```bash
-    git clone https://github.com/dkfqkeorkfl/testcode.git
+    git clone https://github.com/dkfqkeorkfl/style.git
     ```
 2. **프로젝트 디렉토리로 이동하기:**
     ```bash
-    cd testcode
+    cd style/simple_server
     ```
 3. **npm 패키지 업데이트하기:**
     ```bash
