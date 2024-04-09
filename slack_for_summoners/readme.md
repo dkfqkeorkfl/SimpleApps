@@ -34,6 +34,7 @@ You must have [Node.js](https://nodejs.org/) installed on your system.
 
 5. **Fill in configuration file values:**
     ```bash
+    .env
     SID=google sheet key
     GID=google sheet id
     GOOGLEAPI_KEY=google api key
