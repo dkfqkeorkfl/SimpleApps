@@ -32,14 +32,15 @@ You must have [Node.js](https://nodejs.org/) installed on your system.
     npm start
     ```
 
-5. **Fill in configuration file values:**
-    ```bash
-    .env
+5. **Create a `.env` file with the following configuration values:**
+    Create a file named `.env` in the root directory of the project and fill it with the following key-value pairs:
+    ```plaintext
     SID=google sheet key
     GID=google sheet id
     GOOGLEAPI_KEY=google api key
     SLACK_TOKEN=slack token
     ```
+    This file will store your environment variables, which are essential for the application's configuration.
 
 ## Usage
 This project provides two functions.
