@@ -1,34 +1,38 @@
-# jsondb 0.1 release
-simple nosql database using json format from unity
+# JsonDB 0.1 Release
 
-simple way! for unity!
+JsonDB is a simple NoSQL database that uses JSON format in Unity.
 
-Wellcome to JsonDB of Sas.
+It's a simple way for Unity!
 
-it's made to use json easy at file system like nosql db.
+Welcome to JsonDB by Sas.
 
-depency : https://www.newtonsoft.com/json
+It's designed to make using JSON easy with file system like a NoSQL database.
 
-json.net guide : https://www.newtonsoft.com/json/help/html/Introduction.htm
+## Dependencies
+- [Newtonsoft.Json](https://www.newtonsoft.com/json)
 
-example >>
+## Newtonsoft.Json Guide
+You can find a guide for Newtonsoft.Json [here](https://www.newtonsoft.com/json/help/html/Introduction.htm).
 
-    string json = @"[
-    {
-      'Title': 'Json.NET is awesome!',
-      'Author': {
-        'Name': 'James Newton-King',
-        'Twitter': '@JamesNK',
-        'Picture': '/jamesnk.png'
-      },
-      'Date': '2013-01-23T19:30:00',
-      'BodyHtml': '&lt;h3&gt;Title!&lt;/h3&gt;\r\n&lt;p&gt;Content!&lt;/p&gt;'
-    }
-    ]";
+## Example
+```csharp
+string json = @"
+[
+  {
+    'Title': 'Json.NET is awesome!',
+    'Author': {
+      'Name': 'James Newton-King',
+      'Twitter': '@JamesNK',
+      'Picture': '/jamesnk.png'
+    },
+    'Date': '2013-01-23T19:30:00',
+    'BodyHtml': '&lt;h3&gt;Title!&lt;/h3&gt;\r\n&lt;p&gt;Content!&lt;/p&gt;'
+  }
+]";
 
-    var obj = Newtonsoft.Json.Linq.JToken.Parse (json);
-    Sas.JsonDB DB = new Sas.JsonDB("test");
-    DB.Put ("item1", obj);
-    var root = DB.Root ();
-    var title = DB.Get ("item1\\[0]\\Title");
-    var title_txt = (string)title;
+var obj = Newtonsoft.Json.Linq.JToken.Parse(json);
+Sas.JsonDB DB = new Sas.JsonDB("test");
+DB.Put("item1", obj);
+var root = DB.Root();
+var title = DB.Get("item1\\[0]\\Title");
+var title_txt = (string)title;
